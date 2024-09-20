@@ -813,7 +813,7 @@ finalBatle.addEventListener("click", function () {
             update();
         }  
     
-        if (hero.health <= 0) {
+        else if (hero.health <= 0) {
             lastAction.textContent = ("Здоровье Трона " + throne.health + " а урон " + throne.damage + " ВОТ ЭТО ТЫ ЛОХ! ДУМАЛ ЗАКОНЧИТЬ ИГРУ ТАК БЫСТРО? МИНУС 300 ЗОЛОТА. ВОСТАНОВЛЕНА ПОЛОВИНА ХП");
             hero.health = 25;
             if (hero.ima == "Пудж") {
