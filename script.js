@@ -200,7 +200,7 @@ axe.addEventListener("click", function () {
     hero.armor = 50;
     hero.damage = 100;
     hero.mana = 50;
-    hero.money = 1000000000000;
+    hero.money = 1000;
     lastAction.textContent = (hero.ima + " выбран");
     hero.gps = "All Pick";
     update();
@@ -798,7 +798,7 @@ finalBatle.addEventListener("click", function () {
             if (hero.mana == 0) {
                 hero.health-=10;
                 hero.mana = 50;
-                if (hero.ima = "Тинкер") {
+                if (hero.ima == "Тинкер") {
                     hero.mana = 200;
                     update();
                 }
